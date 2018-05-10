@@ -1,0 +1,16 @@
+{
+  "extends": ["eslint:recommended", "react", "prettier"],
+  "rules": {
+    "no-new": [1]
+  },
+  "parser": "babel-eslint",
+  "env": {
+    "jest": true,
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6
+  }
+}

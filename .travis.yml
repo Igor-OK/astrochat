@@ -1,0 +1,24 @@
+sudo: false
+language: node_js
+node_js:
+- '9'
+cache: yarn
+install:
+- yarn
+script:
+- yarn lint
+- yarn test
+before_deploy:
+- yarn build
+- echo "Initializing deployment..."
+- cd build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
+  local-dir: build
+  on:
+    branch: master
+after_deploy:
+- echo "Deployment complete"
