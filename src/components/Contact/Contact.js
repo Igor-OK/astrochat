@@ -4,6 +4,7 @@ import './Contact.css';
 
 import { Avatar } from '../Avatar/Avatar';
 import { Icon } from '../Icon/Icon';
+import { Astrograph } from '../Astrograph/Astrograph';
 
 export const Contact = props => {
   const {
@@ -37,11 +38,7 @@ export const Contact = props => {
       <div className="contact__content">
         <div className="content__header">
           <div className="content__name">{userName}</div>
-          <div>
-            {astroMood}
-            {astroPower}
-            {astroMind}
-          </div>
+          <Astrograph astroMood={astroMood} astroPower={astroPower} astroMind={astroMind} />
           {time ? (
             <div className="content__time">
               {icon ? (
