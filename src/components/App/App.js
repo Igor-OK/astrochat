@@ -13,6 +13,7 @@ import { ChatForm } from '../ChatForm/ChatForm';
 import { ProfilePage } from '../ProfilePage/ProfilePage';
 import { Init } from '../Init/Init';
 import { Login } from '../Login/Login';
+import { getEphemerids } from '../../store/actions/ephemeridsActions';
 
 const ContactsPage = () => (
   <Layout

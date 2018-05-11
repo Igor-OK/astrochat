@@ -5,5 +5,7 @@ export const MESSAGES_APPENDED = 'MESSAGES_APPENDED';
 
 export const SET_SEARCH = 'SET_SEARCH';
 
+export const GET_EPHEMERIDS = 'GET_EPHEMERIDS';
+
 export const SET_CHAT_INFO = 'SET_CHAT_INFO';
 export const CLEAR_CHAT_INFO = 'CLEAR_CHAT_INFO';
