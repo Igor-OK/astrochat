@@ -66,11 +66,14 @@ class UserListComponent extends PureComponent {
               this.props.ephemerids[nowRequest[1]],
             );
 
-            astroCalc(arrNative); //сюда передавать массивЫ координат
+            let astroResult = astroCalc(this.state.currentLongitudes, arrNative); //сюда передавать массивЫ координат
 
             return {
               _id: user._id,
               date: user.phone,
+              astroMood: astroResult[0],
+              astroPower: astroResult[1],
+              astroMind: astroResult[2],
               userName: user.name ? user.name : 'Anonymous',
               avatar: user.img,
               size: 'small',

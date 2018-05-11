@@ -37,7 +37,13 @@
   color: #555;
 }
 
+.message__astro {
+  right: 50px;
+  color: #555;
+}
+
 .message__status,
+.message__astro,
 .message__time {
   position: absolute;
   bottom: 3px;
@@ -52,6 +58,11 @@
 
 .message_my .message__time {
   right: 20px;
+  color: #19c700;
+}
+
+.message_my .message__astro {
+  right: 50px;
   color: #19c700;
 }
 
