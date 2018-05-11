@@ -33,6 +33,7 @@ export const fetchMessages = roomId => async (dispatch, getState) => {
         text: message.message,
         time: message.created_at,
         isMy: currentUserId === message.userId,
+        astro: message.astro,
       }));
 
       dispatch(setMessages({ roomId, messages, next: response.next }));
@@ -43,6 +44,7 @@ export const fetchMessages = roomId => async (dispatch, getState) => {
         text: message.message,
         time: message.created_at,
         isMy: currentUserId === message.userId,
+        astro: message.astro,
       }));
 
       dispatch(appendMessages({ roomId, messages, next: response.next }));
@@ -56,16 +58,17 @@ export const fetchMessages = roomId => async (dispatch, getState) => {
   }
 };
 
-export const sendMessage = (roomId, messageText) => async (dispatch, getState) => {
+export const sendMessage = (roomId, messageText, astro) => async (dispatch, getState) => {
   try {
     const currentUserId = getState().user._id;
-    const response = await api.sendMessage(roomId, messageText);
+    const response = await api.sendMessage(roomId, messageText, astro);
     const message = [
       {
         id: response._id,
         text: response.message,
         time: response.created_at,
         isMy: currentUserId === response.userId,
+        astro: astro,
       },
     ];
 

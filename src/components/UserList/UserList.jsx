@@ -32,6 +32,7 @@ class UserListComponent extends PureComponent {
             const status = user.online ? 'online' : 'offline';
             return {
               _id: user._id,
+              date: user.phone,
               userName: user.name ? user.name : 'Anonymous',
               avatar: user.img,
               size: 'small',

@@ -13,6 +13,7 @@ export const Contact = props => {
     content,
     count,
     icon,
+    date,
     onClick,
     link,
     color,
@@ -34,6 +35,7 @@ export const Contact = props => {
       <div className="contact__content">
         <div className="content__header">
           <div className="content__name">{userName}</div>
+          <div>{date}</div>
           {time ? (
             <div className="content__time">
               {icon ? (
