@@ -76,7 +76,7 @@ export class ProfileEditComponent extends Component {
           name="phone"
           onInputChange={this.onInputChange}
           value={user.phone}
-          label="Enter your phone number"
+          label="Enter your time of birth (dd.mm.yyyy/hh.mm)"
         />
         <InputGroup type="file" name="avatar" label="Attach avatar" />
 
