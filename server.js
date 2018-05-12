@@ -1,8 +1,8 @@
 const { createServer } = require('./src/server/server');
 
 const {
-  MONGO_USER = '',
-  MONGO_PASSWORD = '',
+  MONGO_USER = 'admin',
+  MONGO_PASSWORD = 'admin',
   MONGO_LOCAL = 'false',
   MONGO_DATABASE = 'igorelllo-database-plotva',
   MONGO_HOST = 'ds217970.mlab.com',
