@@ -38,7 +38,7 @@ export const Contact = props => {
       <div className="contact__content">
         <div className="content__header">
           <div className="content__name">{userName}</div>
-          <Astrograph astroMood={astroMood} astroPower={astroPower} astroMind={astroMind} />
+          <Astrograph astroMood={astroMood} astroPower={astroPower} astroMind={astroMind} size={'L'} />
           {time ? (
             <div className="content__time">
               {icon ? (

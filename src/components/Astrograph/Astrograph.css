@@ -1,8 +1,14 @@
+.astrograph-s {
+  transform: scale(0.45) !important;
+  margin-bottom: -25px;
+}
 .astrocell {
   display: inline-block;
   /* border: 1px solid lightgray; */
   border-radius: 50%;
   color: rgba(0, 0, 0, 0);
+  width: 40px;
+  height: 40px;
 }
 
 .mood-1 {
